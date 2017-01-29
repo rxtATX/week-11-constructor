@@ -1,7 +1,7 @@
 'use strict';
-
+//Pull original object
 var shapes = require("./shapes.js");
-
+//Declare new object
 function Pentagon (side1, side2, side3, side4, side5) {
 	if (!(this instanceof Pentagon)) {
 		return new Pentagon (side1, side2, side3, side4, side5);
@@ -13,5 +13,5 @@ function Pentagon (side1, side2, side3, side4, side5) {
 	this.side4 = side4;
 	this.side5 = side5;
 }
-
+//Export this object
 module.exports = Pentagon;

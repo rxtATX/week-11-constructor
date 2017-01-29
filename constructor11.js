@@ -1,3 +1,5 @@
+//EVERYTHING IN ONE FILE; I THINK WE ARE SUPPOSED TO BREAK THIS UP.
+
 'use strict';
 //construtor function for shapes, double checks of we put new while creating a "new shape"
 function Shape (type) {
