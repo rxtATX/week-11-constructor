@@ -11,6 +11,7 @@ function Pentagon (side1, side2, side3, side4, side5) {
 	this.side3 = side3;
 	this.side4 = side4;
 	this.side5 = side5;
+	this.length = this.side1 + this.side2 + this.side3 + this.side4 + this.side5;
 }
 //Export this object
 module.exports = Pentagon;
