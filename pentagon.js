@@ -1,6 +1,5 @@
 'use strict';
-//Pull original object
-var shapes = require("./shapes.js");
+
 //Declare new object
 function Pentagon (side1, side2, side3, side4, side5) {
 	if (!(this instanceof Pentagon)) {

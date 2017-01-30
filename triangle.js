@@ -1,6 +1,5 @@
 'use strict';
-//Import original shape constructor
-var shapes = require("./shapes.js");
+
 //Declare shape parameters
 function Triangle (side1, side2, side3) {
 	if (!(this instanceof Triangle)) {

@@ -14,11 +14,6 @@ function Shape (type) {
 	this.type = type;
 };
 //Create methods
-//shape name
-Shape.prototype.get_type = function() {
-	
-	console.log("This shape is " + this.type);
-};
 //shape size
 Shape.prototype.get_totalLength = function() {
 	var length;
@@ -48,18 +43,23 @@ Pentagon.prototype.constructor = Pentagon;
 var triangleShape = new Triangle(3, 5, 3);
 var squareShape = new Square(3);
 var pentagonShape = new Pentagon(3, 5, 3, 2, 2);
-var shape = new Shape("shape");
+var shape = new Shape("Constructor Shape");
 
 //Determine type and size of constructors
-console.log(triangleShape.get_type() + " | " + triangleShape.get_totalLength());
-console.log(squareShape.get_type() + " | " + squareShape.get_totalLength());
-console.log(pentagonShape.get_type() + " | " + pentagonShape.get_totalLength());
-console.log(shape);
+console.log("The " + triangleShape.type + " has a total length of " + triangleShape.get_totalLength());
+console.log("The " + squareShape.type + " has a total length of " + squareShape.get_totalLength());
+console.log("The " + pentagonShape.type + " has a total length of " + pentagonShape.get_totalLength());
+console.log("This is the original " + shape.type);
 
-console.log(triangleShape instanceof Triangle);
-console.log(squareShape instanceof Square);
-console.log(pentagonShape instanceof Pentagon);
-console.log(shape instanceof Shape);
-
-//Send out Shape object for other files to read
-module.exports = Shape;
+if (triangleShape instanceof Triangle) {
+	console.log("A Triangle is a Triangle.");
+}
+if (squareShape instanceof Square) {
+	console.log("A Square is a Square.");
+}
+if (pentagonShape instanceof Pentagon) {
+	console.log("A Pentagon is a Pentagon.");
+}
+if (shape instanceof Shape) {
+	console.log("A Shape is a Constructor Shape.");
+}

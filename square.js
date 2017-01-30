@@ -1,6 +1,5 @@
 'use strict';
-//Pull original constructor in
-var shapes = require("./shapes.js");
+
 //Declare square parameters
 function Square (side) {
 	if (!(this instanceof Square)) {
